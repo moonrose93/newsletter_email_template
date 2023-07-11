@@ -96,13 +96,13 @@ body{
     padding: 25px 15px;
     border-radius: 12px;
     
-    margin:10px 0 10px 10px;
-    
+    margin:10px 0 10px 10px;    
 }
 
 .sign-up .input{
     margin-left: 10px;
 }
+
 .right img{
     width:500px;
     overflow: hidden;
@@ -137,7 +137,7 @@ body{
 
 .button button{
    
-    margin:10px 0 10px 20px;
+  margin:10px 0 10px 20px;
 }
 
 
