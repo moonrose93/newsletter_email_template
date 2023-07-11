@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Newletter submission form</title>
+    <script>
+        function submitForm() {
+            var emailInput = document.querySelector('input[type="text"]');
+            var email = emailInput.value.trim();
+            
+            // Form validation
+            var errorContainer = document.getElementById("error-container");
+            errorContainer.innerHTML = "";
+            
+            if (email === "") {
+                displayErrorMessage("Email address is required.");
+                return;
+            }
+            
+            if (!validateEmail(email)) {
+                displayErrorMessage("Invalid email address.");
+                return;
+            }
+            
+            // Show success message
+            var successContainer = document.getElementById("success-container");
+            successContainer.innerHTML = "Success! Email submitted: " + email;
+            
+            // Clear input field
+            emailInput.value = "";
+        }
+        
+        function validateEmail(email) {
+            var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return regex.test(email);
+        }
+        
+        function displayErrorMessage(message) {
+            var errorContainer = document.getElementById("error-container");
+            var errorMessage = document.createElement("p");
+            errorMessage.className = "error-message";
+            errorMessage.textContent = message;
+            errorContainer.appendChild(errorMessage);
+        }
+    </script>
+</head>
+<body>
+   <div class="wrapper">
+    <div class="left">
+        <div class="mobile"><img src="/assets/images/illustration-sign-up-mobile.svg"></div>
+        <h1>Stay updated</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <div class="line1">
+            <img src="/assets/images/icon-list.svg" >
+            <p>Product discovery and building what matters</p>
+        </div>
+        <div class="line2">
+            <img src="/assets/images/icon-list.svg" ><p>Measuring to ensure updates are a success</p>
+        </div>
+        <div class="line3">
+            <img src="/assets/images/icon-list.svg" ><p>And much more</p>
+        </div>
+        <!-- Begin Mailchimp Signup Form -->
+        <div class="sign-up">
+            <p>Email address</p>
+            <div class="input">
+                <input type="text" placeholder="Enter your email address">
+            </div>
+            <div id="error-container"></div>
+            <div class="button">
+                <button onclick="submitForm()">Subscribe to monthly newsletter</button>
+            </div>
+            <div id="success-container" class="success-message"></div>
+        </div>
+    </div>
+    <div class="right">
+        <img src="/assets/images/illustration-sign-up-desktop.svg">
+    </div>
+   </div>
+</body>
+</html>
