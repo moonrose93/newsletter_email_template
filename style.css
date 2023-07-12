@@ -141,13 +141,15 @@ Popup butt message
 .open-popup{
     visibility: visible;
     top:50%; 
-    
+    transform: translate(-50%,-50%) scale(1);
+
 }
 
 .popup img{
     width: 100px;
     margin-top: -50px;
     border-radius: 50%;
+    box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .popup h2{
