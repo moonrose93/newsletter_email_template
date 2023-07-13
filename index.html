@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Newsletter sign-up form with success message solution</title>
+</head>
+<body>
+   <div class="wrapper">
+    <div class="left">
+        <div class="mobile"><img src="./illustration-sign-up-mobile.svg"></div>
+        <h1>Stay updated!</h1>
+        <p class="p1">Join 60,000+ product managers receiving monthly<br> updates on:</p>
+        <div class="line1">
+            <img src="./icon-list.svg" >
+            <p>Product discovery and building what matters</p>
+        </div>
+        <div class="line2">
+            <img src="./icon-list.svg" ><p>Measuring to ensure updates are a success</p>
+        </div>
+        <div class="line3">
+            <img src="./icon-list.svg" ><p>And much more</p>
+        </div>
+        <!-- Begin Mailchimp Signup Form -->
+        <div class="sign-up">
+            <p>Email address </p>
+            <div class="input">
+                <input type="text" placeholder="Enter your email address">
+            </div>
+            <div id="error-container"></div>
+            <div class="button">
+                <button onclick="openPopup()">Subscribe to monthly newsletter</button>
+            </div>
+            <div id="success-container" class="success-message"></div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="img-right">
+            <img src="./illustration-sign-up-desktop.svg">
+        </div>
+    </div>
+    <div class="container">
+        <div class="popup" id="popup">
+            <img src="./icon-success.svg">
+            <h2>Thanks for subscribing</h2>
+            <p>A confirmation email has been send to your(email).Please open it and click the button inside to confirm your subscription.</p>
+            <button type="button" onclick="closePopup()">Dissmiss message</button>
+        </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
