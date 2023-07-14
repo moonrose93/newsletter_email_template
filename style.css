@@ -11,6 +11,10 @@ body{
 }
 
 
+.none-active{
+    visibility: hidden;
+}
+
 .wrapper{
     width: 100%;
     max-width: 920px;
@@ -22,6 +26,8 @@ body{
     transform: translate(-50%, -50%);
     border-radius: 25px;
     overflow: hidden;
+    visibility: visible;
+
     
    
 }
@@ -128,6 +134,8 @@ body{
 .sign-up{
     margin-top: 15px;
 }
+
+
 .sign-up .input{
     margin-left: 10px;
 }
@@ -163,6 +171,7 @@ Popup butt message
 }
 .popup{
     width: 400px;
+    line-height: 35px;
     background: #fff;
     border-radius: 6px;
     position: absolute;
@@ -190,9 +199,23 @@ Popup butt message
 }
 
 .popup h2{
+    line-height: 40px;
      font-size: 38px; 
      font-weight: 500;
      margin: 30px 0 10px;
+}
+
+.active {
+    visibility: visible;
+}
+
+.not-valid{
+    visibility: hidden;
+}
+
+span{
+    margin-left: 20px;
+    color: red;
 }
 
 .popup button{
