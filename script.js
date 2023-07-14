@@ -10,13 +10,12 @@ function openPopup() {
     popup.classList.add("open-popup");
     wrapper.classList.add('none-active');
     wrapper.classList.remove("wrapper");
+    notValid.classList.remove("active");
     
-  } else {
-    notValid.classList.add('active');
-    notValid.classList.remove('not-valid');
+    
+    
   }
 }
-
 function closePopup() {
   popup.classList.remove("open-popup");
 }
