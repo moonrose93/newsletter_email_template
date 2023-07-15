@@ -233,7 +233,7 @@ span{
 
 }
 
-@media(max-width: 480px){
+@media(max-width: 370px){
        .wrapper{
         width: 100%;
         height: 100vh;
@@ -259,6 +259,7 @@ span{
 .button button {
    width: 88%;
    margin-bottom: 16px;
+   padding:15px;
    
 }
 
@@ -287,8 +288,7 @@ span{
     }    
 
 .wrapper .left{
-    padding: 20px 20px 0 0px;
-    
+    padding: 20px 20px 0 20px;
 
 
 }
