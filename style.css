@@ -272,6 +272,14 @@ span{
         
     }
 
+
+    .wrapper .left .p1 {
+        padding: 15px 0px 15px 20px;
+        line-height: 25px;
+        margin-bottom: 15px;
+        
+    }    
+
 .wrapper .left{
     padding: 0;
 
