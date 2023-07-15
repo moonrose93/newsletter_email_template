@@ -258,7 +258,7 @@ span{
 
 .button button {
    width: 88%;
-   margin: 5px 0 0px 20px;
+   margin-bottom: 16px;
    
 }
 
@@ -284,10 +284,11 @@ span{
         line-height: 25px;
         margin-bottom: 15px;
         
+        
     }    
 
 .wrapper .left{
-    padding: 0;
+    padding: 20px 20px 0 20px;
 
 
 }
@@ -295,6 +296,7 @@ span{
 .sign-up{
     position: relative;
     top: 25px;
+    
 }
 
 }
