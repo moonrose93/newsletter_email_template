@@ -240,12 +240,13 @@ span{
         
     }
 .wrapper .mobile img{
-    width: 100%;
+    width: 90%;
     height: 20%;
     display: inline;
     padding: 0;
     position: relative;
     align-self: center;
+    margin-left: 15px;
 
 }
 
@@ -282,7 +283,7 @@ span{
 
 
     .wrapper .left .p1 {
-        margin-left: 10px;
+        margin-left: 20px;
         line-height: 25px;
         text-align: left;
         padding: 0;
@@ -300,8 +301,8 @@ span{
 }
 
 .sign-up{
-    position: absolute;
-    top: 550px;
+    position: relative;
+    top: -15px;
     margin-top: 40px;
     
 }
