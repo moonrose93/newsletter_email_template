@@ -282,7 +282,7 @@ span{
 
 
     .wrapper .left .p1 {
-        padding: 0px 5px 0px 15px;
+        padding: 0px 0px 0px 15px;
         line-height: 25px;
         text-align: left;
         
@@ -304,7 +304,10 @@ span{
     margin-top: 40px;
     
 }
-
+.sign-up p{
+    margin-top: 10px;
+}
+ 
 
 
 .line3{
