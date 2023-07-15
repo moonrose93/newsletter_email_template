@@ -239,6 +239,7 @@ span{
         height: 100vh;
         position:absolute;
         border-radius: 0;
+        
     }
 .wrapper .mobile img{
     width: 100%;
@@ -258,7 +259,7 @@ span{
 
 .button button {
    width: 88%;
-   margin-bottom: 16px;
+   
    padding: 15px 5px;
    
 }
@@ -291,7 +292,7 @@ span{
 
 .wrapper .left{
     padding: 0px 20px 0 20px;
-    margin-bottom: 10px;
+    
     
 
 
@@ -300,7 +301,7 @@ span{
 .sign-up{
     position: absolute;
     top: 520px;
-    margin-top: 50px;
+    margin-top: 30px;
     
 }
 
